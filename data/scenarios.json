@@ -1,0 +1,74 @@
+{
+  "scenarios": [
+    {
+      "id": "voiture",
+      "titre": "Vente d'une Audi A3",
+      "produit": "Audi A3 2018, 120000 km, diesel",
+      "client_type": "Client prudent et hésitant",
+      "objectif": "Proposer un essai et négocier un prix acceptable.",
+      "prix": 15000,
+      "prix_min": 13500,
+      "prompt_system": "Sois rassurant, mets en avant l'historique d'entretien et la garantie, propose un essai."
+    },
+    {
+      "id": "pc_gamer",
+      "titre": "Vente d'un PC Gamer RTX 4070",
+      "produit": "PC Gamer - RTX 4070, Ryzen 7, 32 Go RAM, SSD 1 To",
+      "client_type": "Client passionné mais méfiant",
+      "objectif": "Montrer la supériorité technique et pousser à la décision.",
+      "prix": 2200,
+      "prix_min": 2000,
+      "prompt_system": "Utilise des arguments techniques précis (FPS, refroidissement, garantie)."
+    },
+    {
+      "id": "assurance",
+      "titre": "Vente d'un contrat d'assurance santé",
+      "produit": "Assurance Santé Premium - couverture complète",
+      "client_type": "Client analytique et rationnel",
+      "objectif": "Établir la confiance et convaincre par les garanties.",
+      "prix": 80,
+      "prix_min": 60,
+      "prompt_system": "Sois factuel, expose les scénarios couverts et les économies à long terme."
+    },
+    {
+      "id": "immobilier",
+      "titre": "Vente d'une maison 4 chambres",
+      "produit": "Maison 4 chambres, 150m², quartier résidentiel",
+      "client_type": "Famille cherchant sécurité et espace",
+      "objectif": "Obtenir une visite sur place.",
+      "prix": 250000,
+      "prix_min": 235000,
+      "prompt_system": "Valorise le quartier, les écoles, et les possibilités d'aménagement."
+    },
+    {
+      "id": "smartphone",
+      "titre": "Vente d'un Smartphone Premium",
+      "produit": "Smartphone X Pro - 512 Go, caméra pro",
+      "client_type": "Client à la recherche de qualité photo",
+      "objectif": "Montrer la valeur des fonctionnalités photo et convaincre l'achat.",
+      "prix": 1200,
+      "prix_min": 1050,
+      "prompt_system": "Insiste sur la qualité photo, l'OS, la garantie et les accessoires inclus."
+    },
+    {
+      "id": "moto",
+      "titre": "Vente d'une Moto Yamaha MT-07",
+      "produit": "Yamaha MT-07, 2020, 8 000 km",
+      "client_type": "Client jeune, sportif",
+      "objectif": "Faire essayer la moto et conclure la vente.",
+      "prix": 7000,
+      "prix_min": 6500,
+      "prompt_system": "Parle performance, entretien récent et économies de carburant."
+    },
+    {
+      "id": "tele",
+      "titre": "Vente d'une TV Samsung 4K",
+      "produit": "TV Samsung 55\" 4K OLED",
+      "client_type": "Client familial recherchant qualité d'image",
+      "objectif": "Montrer la valeur pour la famille et l'expérience cinéma à la maison.",
+      "prix": 900,
+      "prix_min": 800,
+      "prompt_system": "Insiste sur la qualité d'image, la compatibilité HDR et les garanties."
+    }
+  ]
+}

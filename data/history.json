@@ -1,0 +1,18 @@
+[
+  {
+    "role": "user",
+    "content": "Quel est le prix de cette voiture ? "
+  },
+  {
+    "role": "assistant",
+    "content": "Le prix de l'Audi A3 2018 diesel est actuellement fixé à 22 500 euros. Cette voiture a bénéficié d'un entretien régulier et est toujours sous garantie, ce qui en fait un excellent choix pour un client prudent comme vous. Je vous propose de prendre contact avec moi pour discuter des détails et peut-être même organiser un essai routier pour que vous puissiez découvrir toutes ses qualités."
+  },
+  {
+    "role": "user",
+    "content": "Et si on payait 14 000 euros ? "
+  },
+  {
+    "role": "assistant",
+    "content": "Je comprends que vous cherchez à obtenir le meilleur prix possible, mais 14 000 euros sont malheureusement en dessous de notre fourchette de négociation. L'Audi A3 2018 est une voiture très bien équipée et entretenue, avec un historique de maintenance impeccable, ce qui justifie un prix plus élevé. Cependant, je suis ouvert à la négociation et je pourrais peut-être vous offrir un prix compétitif autour de 20 000 euros, en tenant compte de la qualité de la voiture et de la garantie qui l'accompagne. Pourquoi ne pas essayer la voiture et voir par vous-même sa qualité ?"
+  }
+]

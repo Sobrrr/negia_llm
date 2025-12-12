@@ -1,0 +1,22 @@
+[project]
+name = "negia-llm"
+version = "1.0.0"
+description = "Simulateur de négociation utilisant LLaMA 3 via Groq et Streamlit"
+authors = [{ name = "Sobour Adissa" }]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "streamlit",
+    "langchain",
+    "langchain-core",
+    "langchain-groq",
+    "pydantic",
+    "python-dotenv",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "black",
+    "ruff",
+]
