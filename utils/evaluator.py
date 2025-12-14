@@ -11,7 +11,7 @@ def evaluate_offer_text(user_offer_text: str, scenario):
     """
     offer = _extract_number(user_offer_text)
     if offer is None:
-        return {"score": 0, "reason": "Aucune offre chiffrée détectée."}
+        return {"score": 0, "raison": "Aucune offre chiffrée détectée."}
 
     prix = scenario.get("prix", 0)
     min_price = scenario.get("prix_min", 0)

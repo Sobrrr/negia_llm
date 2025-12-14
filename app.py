@@ -5,16 +5,16 @@ from dotenv import load_dotenv
 
 from utils.memory import load_history, save_history
 from utils.evaluator import evaluate_offer_text
-from models.llm_grop import chat_with_groq   
+from models.llm_groq import chat_with_groq   
 
 # Load .env
 load_dotenv()
 
-# ---------------- Page config ----------------
+# Page config 
 st.set_page_config(page_title="Négociateur IA (GROQ)", layout="wide")
-st.title("💰 Négociateur IA — Multi scénarios (GROQ)")
+st.title(" 🤖 Négociateur IA (GROQ)")
 
-# ---------------- Load scenarios ----------------
+# Load scenarios 
 with open(os.path.join("data", "scenarios.json"), "r", encoding="utf-8") as f:
     SCENARIOS = json.load(f)["scenarios"]
 
@@ -23,11 +23,11 @@ scenario_map = {s["titre"]: s for s in SCENARIOS}
 with open(os.path.join("data", "intro.json"), "r", encoding="utf-8") as f:
     INTRO = json.load(f)["intro"]
 
-# ---------------- Sidebar ----------------
+# Sidebar 
 with st.sidebar:
     st.header("Configuration")
     groq_api_key = st.text_input("Clé API Groq", type="password")
-    model_name = st.selectbox("Modèle (GROQ)", ["llama-3.3-70b-versatile", "llama-3.1-8b-instant", "mixtral-8x7b-32768"])
+    model_name = st.selectbox("Modèle (GROQ)", ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"])
     temperature = st.slider("Température", 0.0, 1.0, 0.6)
     selected_title = st.selectbox("Choisir un scénario", list(scenario_map.keys()))
 
@@ -35,15 +35,13 @@ with st.sidebar:
         save_history([])
         st.rerun()
 
-# ---------------- Active scenario ----------------
+# Active scenario 
 SC = scenario_map[selected_title]
 st.subheader(SC["titre"])
 st.markdown(f"**Produit** : {SC['produit']}")
-#st.markdown(f"**Client** : {SC['client_type']}")
-#st.markdown(f"**Objectif** : {SC['objectif']}")
-#st.markdown(f"**Prix affiché** : {SC['prix']} € — **Prix minimal** : {SC['prix_min']} €")
 
-# ---------------- System prompt ----------------
+
+# System prompt
 with open(os.path.join("prompts", "sell_prompt.txt"), "r", encoding="utf-8") as f:
     base_template = f.read()
 
@@ -54,7 +52,7 @@ system_prompt = base_template.format(
     instructions=SC.get("prompt_system", "")
 )
 
-# ---------------- Chat memory ----------------
+# Chat memory
 history = load_history()  # list of dicts {"role","content"}
 
 st.divider()
@@ -70,7 +68,7 @@ for msg in history:
     else:
         st.chat_message("assistant").write(msg["content"])
 
-# ---------------- User input ----------------
+# User input 
 user_input = st.chat_input("Votre message...")
 
 if user_input:
@@ -99,7 +97,7 @@ if user_input:
         # Save history
         save_history(history)
 
-        # Evaluate user's offer if present (simple evaluation)
+        # Evaluate user's offer if present 
         eval_result = evaluate_offer_text(user_input, SC)
         st.sidebar.markdown("### Évaluation de l'offre utilisateur")
         st.sidebar.json(eval_result)

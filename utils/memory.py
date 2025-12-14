@@ -18,7 +18,6 @@ def load_history():
 def save_history(history):
     """
     history: list de dicts {"role": "...", "content": "..."}
-    Écrit en écrasant le fichier (format lisible).
     """
     os.makedirs(os.path.dirname(HISTORY_FILE), exist_ok=True)
     with open(HISTORY_FILE, "w", encoding="utf-8") as f:
