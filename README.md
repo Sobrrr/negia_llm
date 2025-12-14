@@ -1,13 +1,12 @@
-# 🤖 NEGIA_LLM : Système de Négociation de Prix Automatisé
-## Contexte
+## Institut de Formation et de Recherche en Informatique (UAC)
 Projet académique réalisé dans le cadre du cours **NLP (Natural Language Processing)** dirigé par **M. Gracieux HOUNNA**.  
 ## Groupe 1 
 ### Membres du Groupe
 `BALOGOUN Sobour`
 `BOSSOU Amola`
 
-## Institut de Formation et de Recherche en Informatique (UAC)
-
+# 🤖 NEGIA_LLM : Système de Négociation de Prix Automatisé
+## Contexte
 **NEGIA_LLM** est un **agent conversationnel** capable de simuler des négociations commerciales réalistes et d’évaluer la persuasion des échanges.
 
 ### Objectifs
@@ -57,15 +56,15 @@ NEGIA_LLM/
 - Clé API Groq
 ### Etapes
 1. Cloner le dépot et naviguer dans le dossier
-  - git clone <URL_DU_DEPOT> 
-  - cd NEGIA_LLM
+   - git clone <URL_DU_DEPOT> 
+   - cd NEGIA_LLM
 2. Installer les dépendances via uv :
    - uv sync
    - si uv n'est pas installé, faire pip install uv
 ## Utilisation 
 Lancer l'interface utilisateur streamlit :
 - uv run streamlit run app.py 
-Une fois l'application lancée :
+- Une fois l'application lancée :
 1. Sélectionner un scénario de vente dans la barre latérale.
 2. L’IA initie la conversation avec le client.
 3. Négocier le prix en tant que client via la zone de chat.
