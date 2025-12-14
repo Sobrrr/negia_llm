@@ -3,8 +3,8 @@
 Projet académique réalisé dans le cadre du cours **NLP (Natural Language Processing)** dirigé par **M. Gracieux HOUNNA**.  
 ## Groupe 1 
 ### Membres du Groupe
-BALOGOUN Sobour
-BOSSOU Amola
+`BALOGOUN Sobour`
+`BOSSOU Amola`
 
 ## Institut de Formation et de Recherche en Informatique (UAC)
 
@@ -50,4 +50,25 @@ NEGIA_LLM/
 ├── requirements.in        # Dépendances brutes
 ├── uv.lock                # Verrouillage des versions (UV)
 └── README.md              # Documentation
+ ```
+## Installation 
+### Pré-requis
+Python 3.10 ou  version supérieure
+Clé API Groq
+### Etapes
+1. Cloner le dépot et naviguer dans le dossier
+  git clone <URL_DU_DEPOT>
+  cd NEGIA_LLM
+2. Installer les dépendances via uv
+   uv sync
+   si uv n'est pas installé, faire pip install uv
+## Utilisation 
+Lancer l'interface utilisateur streamlit 
+uv run streamlit run app.py
+Une fois l'application lancée :
+1. Sélectionner un scénario de vente dans la barre latérale.
+2. L’IA initie la conversation avec le client.
+3. Négocier le prix en tant que client via la zone de chat.
+4. Observer l’évaluation automatique des réponses (persuasion, ton, contre-offres).
+
 
