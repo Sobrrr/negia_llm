@@ -53,18 +53,18 @@ NEGIA_LLM/
  ```
 ## Installation 
 ### Pré-requis
-Python 3.10 ou  version supérieure
-Clé API Groq
+- Python 3.10 ou  version supérieure
+- Clé API Groq
 ### Etapes
 1. Cloner le dépot et naviguer dans le dossier
-  git clone <URL_DU_DEPOT> ;
-  cd NEGIA_LLM
+  - git clone <URL_DU_DEPOT> 
+  - cd NEGIA_LLM
 2. Installer les dépendances via uv :
-   uv sync;
-   si uv n'est pas installé, faire pip install uv
+   - uv sync
+   - si uv n'est pas installé, faire pip install uv
 ## Utilisation 
-Lancer l'interface utilisateur streamlit ;
-uv run streamlit run app.py ;
+Lancer l'interface utilisateur streamlit :
+- uv run streamlit run app.py 
 Une fois l'application lancée :
 1. Sélectionner un scénario de vente dans la barre latérale.
 2. L’IA initie la conversation avec le client.
