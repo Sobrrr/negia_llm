@@ -43,7 +43,7 @@ NEGIA_LLM/
 │   ├── evaluator.py       # Algorithme d'évaluation des réponses
 │   └── memory.py          # Gestion de la mémoire à court terme
 │
-├── .env.clé_api           # Template pour les variables d'environnement
+├── .env.clé_api           # Clé API Groq
 ├── app.py                 # Point d'entrée de l'application Streamlit
 ├── pyproject.toml         # Configuration du projet
 ├── requirements.in        # Dépendances brutes
